@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --white: #ffff;
+  --grey: #333333;
+  --dark-grey: #1f1f1f;
+  --off-black: #141414;
+  --green: hsl(75, 94%, 57%);
+  --neural-hsl: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "inter";
+  font-size: 14px;
+  height: 100vh;
+  background-color: var(--off-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+main {
+  background-color: var(--dark-grey);
+  text-align: center;
+  padding: 1.8rem;
+  border-radius: 0.5rem;
+  min-width: 290px;
+}
+
+img {
+  width: 90px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.social {
+  margin: auto;
+}
+
+.social_name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.social_location {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 1.5rem;
+}
+
+.social_description {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%, 0.9);
+  margin-bottom: 1.3rem;
+}
+
+.social_links a {
+  font-family: "inter";
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+  background-color: #333333;
+  margin-top: 0.8rem;
+  padding: 0.65rem 2.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.social_links a:hover,
+a:focus-visible {
+  background-color: var(--green);
+  color: var(--neural-hsl);
+}
